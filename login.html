@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="link/login.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/logo.png" alt="Zcientia">
+    </div>
+    <div class="login">
+        <h1>LOGIN</h1>
+        <form action="">
+            Username: <br>
+            <input type="text" id="user" placeholder="Enter your username">  <br>
+            Password:  <br>
+            <input type="password" name="" id="pass" placeholder="Enter your Password" > <br>
+            <a href="">Forget password</a> <br>
+            <input type="button" value="Sign In" id="btn">
+            
+
+        </form>
+        <div class="footer">
+            <p align="center">Copyright © 2023 Zcientia Labs - All Rights Reserved   </p>
+        </div>
+    </div>
+    
+</body>
+<script>
+    $(document).ready(function() {
+$("ul.navbar-nav > li").click(function(e) {
+$("ul.navbar-nav > li").removeClass("active");
+$(this).addClass("active");
+});
+});
+  </script>
+</html>

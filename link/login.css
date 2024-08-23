@@ -1,0 +1,73 @@
+.body{
+    height: 100%;
+    width: 100%;
+    }
+
+.header{
+	height: 20%;
+	width: 100%;
+    left: 0;
+	position: fixed;
+	border-bottom: solid 1px rgba(0, 0, 255, 0.5) ;	
+}
+
+.header img{
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.login{
+	width: 100%;
+    position: fixed;
+    height: 70%;
+	margin-top: 11%;
+}
+
+h1{
+    text-align: center;
+}
+form{
+    width: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:x-large;
+    
+}
+#user,#pass{
+    height: 50px;
+    border-radius:50px;
+	width: 100%;
+    font-size: large;
+    border: solid 1px rgba(0, 0, 255, 0.5);
+    color:  rgba(0, 0, 255, 0.5);
+}
+
+#btn{
+    height: 50px;
+    width: 101%;
+    border-radius: 50px;
+    font-size:x-large;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    cursor: pointer;
+}
+
+.footer{
+	height: 8%;
+	width: 100%;
+	position: fixed;
+	margin-top: 3%;
+	bottom:0;
+	left: 0;
+	border-top: solid 1px rgba(0, 0, 255, 0.5);
+}
+
+a{
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    color:  rgba(0, 0, 255, 0.5);
+}

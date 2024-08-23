@@ -1,0 +1,67 @@
+/* Full-width input fields */
+.rec-form input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.rec-form textarea{
+  width: 98%;
+  resize: none;
+  border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+.rec-form button {
+  background-color:  rgb(204, 202, 202);
+  color: rgb(7, 7, 7);
+  font-size: 1rem;
+  font-weight: 500;
+  padding:5px 5px;
+  margin: 5px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 49%;
+}
+
+.rec-form {
+  padding: 20px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 20px;
+  width: 450px; /* Could be more or less, depending on screen size */
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
