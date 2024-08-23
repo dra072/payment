@@ -1,39 +1,261 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PAYMENT</title>
-  <link rel="stylesheet" href="payment.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="link/style.css">
+    <script src="link/dashboard.js"></script>
+    <link rel="stylesheet" href="link/float.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,500&display=swap"/>
+    <title>hrms</title>
 </head>
+
 <body>
-  <form action="">
-  <h2 class="one">Your Details</h2>
-  <ol>
-    <li>Name: <input type="text" ></li>
-    <li>Email: <input type="email" name="" id=""> </li>
-    <li>Phone: <input type="tel" name="" id=""></li>
-  </ol>
-  <h2 class="two">Delivery Address</h2>
-  <ol>
-    <li>Address: <textarea name="" id="" cols="15" rows="3"></textarea></li>
-    <li>District: <input type="text"> </li>
-    <li>Post Code: <input type="text"></li>
-    <li>State: <input type="text"></li>
-  </ol>
-  <h2 class="three">Card Details</h2>
-  <ol >
-    <li>Card type 
-      <select name="" id="">
-      <option value="">Mastercard</option>
-      <option value="">RUPAY</option>
-      <option value="">VISA</option>
-      </select>
-    </li>
-    <li>Card Number <input type="number" ></li>
-    <li>Security Code <input type="number" ></li>
-    <li>Expiry <input type="date" name="" id=""></li>
-    <li>Name on card <input type="text"></li>
-  </ol>
-  <input type="submit" value="PAYMENT" >
-</form>
+    <!-- Header Part -->
+    <div class="header">
+        <span id="path">Home &rsaquo; Recruitment &rsaquo; Job Post</span>
+        <a href="login.html" align="right" id="logout">Logout <img src="image/log.png" height="15x"></a>
+    </div>
+
+    <!-- Sidebar Navbar -->
+    <div class="sidebar">
+        <img class="logoc" src="image/company-logo.png" alt="" width="98%">
+        <a href=""><img src="image/1.png"> Hi User</a>
+        <a href=""><img src="image/2.png">Home</a>
+        <a href=""><img src="image/3.png">Salary & Payroll</a> 
+        <a id="rec" href=""><img src="image/4.png">Recruitment</a>
+        <a href=""><img src="image/5.png">Performance</a>
+        <a href=""><img src="image/6.png">Benefits</a>
+        <a href=""><img src="image/7.png">Attendance</a>
+        <a href=""><img src="image/8.png">Learning</a>
+        <a href=""><img src="image/9.png">Wellness</a>
+        <a href=""><img src="image/10.png">Rules</a>
+    </div >
+
+    <!-- Option Bar -->
+    <div class="option-bar">
+        <br><br>
+        <a id="option1" class="w3-bar-item w3-button" onclick="openCity('London')">Job Posted</a>
+        <a id="option2" class="w3-bar-item w3-button" onclick="openCity('Paris')">Candidate List</a>
+        <a id="option3" class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Interview Schedule </a>
+    </div>
+    
+    <!-- Content Part -->
+    <div class="content">
+        <div id="London" class="w3-container city" >
+            <h1>List of all Posted job</h1>
+            <form action="">
+            <table class="main">
+                <tr>
+                    <th>Job Title</th>
+                    <th>No. of Position</th>
+                    <th>Added Date</th>
+                    <th>Closing Date</th>
+                    <th>Hiring Manager</th>
+                    <th>Skill Required</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Web Developer</td>
+                    <td>03</td>
+                    <td>17 April 2023</td>
+                    <td>25 April 2023</td>
+                    <td>Hemnet xyz</td>
+                    <td>Node Js</td>
+                    <td>
+                        <select name="option" id="option" onchange="option1()">
+                            <option value="edit">Edit</option> <option value="delete">Delete</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Java Developer</td>
+                    <td>06</td>
+                    <td>17 May 2023</td>
+                    <td>12 April 2023</td>
+                    <td>Hari Kumar</td>
+                    <td>Spring/ Hibernate</td>
+                    <td>
+                        <select name="option" id="option" onchange="option1()">
+                            <option value="edit">Edit</option> <option value="delete">Delete</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Java Testing</td>
+                    <td>11</td>
+                    <td>17 April 2023</td>
+                    <td>21 April 2023</td>
+                    <td>Hari Kumar</td>
+                    <td>Selinium</td>
+                    <td><select><option>Edit</option><option>Delete</option></select></td>
+                </tr>   
+                <tr>
+                    <td>Java Developer</td>
+                    <td>06</td>
+                    <td>17 May 2023</td>
+                    <td>12 April 2023</td>
+                    <td>Hari Kumar</td>
+                    <td>Spring/ Hibernate</td>
+                    <td><select><option>Edit</option><option>Delete</option></select></td>
+                </tr>
+                
+            </table>
+        </form>
+
+            <div id="id01" class="modal">
+                <form class="modal-content animate" action="#" method="post">
+                  <!-- <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&tghsgadimes;</span>
+                  </div> -->
+              
+                    <div class="rec-form">
+                        <table>
+                            <tr>
+                                <td>Job Title: <br><input type="text"></td>
+                                <td>Skill Required: <br><input type="text"></td>
+                                <td>Hiring Manager: <br><input type="text"></td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td>No. of Vacancy:  <br><input type="text"></td>
+                            <tr>
+                                <td>Start Date: <br><input type="date"></td>
+                                <td>End Date: <br><input type="date"></td>
+                            </tr> 
+                        </table>
+                        Description: <br> <textarea name="" id=""  rows="3"></textarea> <br>
+                        <button type="submit">Submit</button> 
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button> 
+                    </div>
+                </form>
+            </div>
+            <button id="addpost" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">+ Add New Post</button>
+        </div>
+          
+        <div id="Paris" class="w3-container city" style="display:none" >           
+            <h1>List of all Candidate</h1>
+            <table class="main" >
+                <tr>
+                    <th>Name</th>
+                    <th>Job Title</th>
+                    <th>Experience</th>
+                    <th>Skill</th>
+                    <th>Last Acad.%</th>
+                    <th>Contact No.</th>
+                    <th>Mail Id</th>
+                    <th>Resume</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Danish Akhtar</td>
+                    <td>Web Developer</td>
+                    <td>2 years</td>
+                    <td>html,css,Javascript</td>
+                    <td>80%</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td><a href="image/Danish Resume1.pdf" target="_blank"><img src="image/logores.jpg" alt="" width="30px"></a></td>
+                    <td><select><option>Pending</option><option>Shortlist</option><option>Reject</option></td>
+                </tr>
+                <tr>
+                    <td>Hemant Kumar</td>
+                    <td>Python Developer</td>
+                    <td>2 years</td>
+                    <td>Python,Django</td>
+                    <td>82%</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td><a href="image/hrms.pdf" target="_blank"><img src="image/logores.jpg" alt="" width="30px"></a></td>
+                    <td><select><option>Pending</option><option>Shortlist</option><option>Reject</option></select></td>
+                </tr>
+                <tr>
+                    <td>Urmila</td>
+                    <td>Software Engineer</td>
+                    <td>3 years</td>
+                    <td>Javascript,Python</td>
+                    <td>83%</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td><a href="image/Danish Resume1.pdf" target="_blank"><img src="image/logores.jpg" alt="" width="30px"></a></td>
+                    <td><select><option>Pending</option><option>Shortlist</option><option>Reject</option></select></td>
+                </tr>
+                <tr>
+                    <td>Hemant Kumar</td>
+                    <td>Python Developer</td>
+                    <td>2 years</td>
+                    <td>Python,Django</td>
+                    <td>82%</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td><a href="image/hrms.pdf" target="_blank"><img src="image/logores.jpg" alt="" width="30px"></a></td>
+                    <td><select><option>Pending</option><option>Shortlist</option><option>Reject</option></select></td>
+                </tr>
+            </table>
+        </div>
+          
+        <div id="Tokyo" class="w3-container city" style="display:none" >
+            <h1>Selected Candidate Details</h1>
+            <table class="main">
+                <tr>
+                    <th>Name</th>
+                    <th>Job Title</th>
+                    <th>Contact No.</th>
+                    <th>Mail Id</th>
+                    <th>Interview Date</th>
+                    <th>Interview Time</th>
+                    <th>Interviewer Name</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Danish Akhtar</td>
+                    <td>Web Developer</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td>17 April 2023</td>
+                    <td>02:30 pm</td>
+                    <td>xyz Btm</td>
+                    <td><select><option>Pending</option><option>Select</option><option>Reject</option></select></td>
+                </tr>
+                <tr>
+                    <td>Hemant Kumar</td>
+                    <td>Python Developer</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td>17 April 2023</td>
+                    <td>02:30 pm</td>
+                    <td>xyz</td>
+                    <td><select><option>Pending</option><option>Select</option><option>Reject</option></select></td>
+                </tr>
+                <tr>
+                    <td>Urmila</td>
+                    <td>Software Engineer</td>
+                    <td>9876543210</td>
+                    <td>abc@gmail.com</td>
+                    <td>17 April 2023</td>
+                    <td>02:30 pm</td>
+                    <td>xyz Aptech</td>
+                    <td><select><option>Pending</option><option>Select</option><option>Reject</option></select></td>
+                </tr>
+                <tr>
+                <td>02:30 pm</td>
+                    <td>xyz</td>
+                    <td><select><option>Pending</option><option>Select</option><option>Reject</option></select></td>
+                </tr>
+            </table>            
+        </div>
+    </div>
+
+    <!-- footer Part -->
+    <div class="footer">
+        <p id="f1" >Terms & Conditions | Privacy Policy | Accessibility | Legal |</p>
+        <p id="f2" >Copyright © 2023 Zcientia Labs - All Rights Reserved.</p>
+    </div> 
 </body>
-</html>
+</html>      
